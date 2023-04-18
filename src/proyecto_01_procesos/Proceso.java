@@ -5,13 +5,16 @@ package proyecto_01_procesos;
 public class Proceso {
     
     // Atributos 
-    private String ID,nombre;
+    private String ID,IDart,nombre;
     private int tamaño,tiempo,prioridad,llegada;
     
     // Constructor
     public Proceso(){}
     
     // Metodos
+    public void SetIDartificial(int i){
+        IDart = "P"+i;
+    }
     public void SetSize(int n){
         tamaño = n;
     }
@@ -57,5 +60,9 @@ public class Proceso {
     }
     public String getID(){
         return ID;
+    }
+    
+    public String getIDArt(){
+        return IDart;
     }
 }
